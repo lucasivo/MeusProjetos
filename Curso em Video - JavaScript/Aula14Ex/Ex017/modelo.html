@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Informe o número para apresentação da tabuada:
+                <input type="number" name="numero" id="txtn">
+            </p>
+        <div id="txtop">
+            <p>
+                Informe a operação desejada:<br>
+                <label for="soma">Soma</label>
+                <input type="radio" name="radop" id="soma"><br>
+                <label for="subtracao">Subtração</label>
+                <input type="radio" name="radop" id="subtracao"><br>
+                <label for="multiplicacao">Multiplicação</label>
+                <input type="radio" name="radop" id="multiplicacao"><br>
+                <label for="divisao">Divisão</label>
+                <input type="radio" name="radop" id="divisao">
+            </p>
+            <p>
+                <input type="button" value="Gerar Tabuada!" onclick="tabuada()">
+            </p>
+        </div>
+        </div>
+        <div id="res1">
+            Mostrador da tabuada!<br>
+        </div>
+        <div id="res2"></div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

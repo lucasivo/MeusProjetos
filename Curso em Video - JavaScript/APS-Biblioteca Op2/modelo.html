@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca - Sistema de Gestão</h1>
+    </header>
+
+    <main>
+        <section id="adicionar-item">
+            <h2>Adicionar Item</h2>
+            <form id="item-form">
+                <select id="tipo-item">
+                    <option value="livro">Livro</option>
+                    <option value="revista">Revista</option>
+                    <option value="dvd">DVD</option>
+                </select>
+                <input type="text" id="titulo" placeholder="Título" required>
+                <input type="text" id="autor" placeholder="Autor/Diretor" required>
+                <input type="number" id="ano" placeholder="Ano" required>
+                <input type="number" id="quantidade" placeholder="Quantidade" required>
+                <button type="submit"><i class="fas fa-plus-circle"></i> Adicionar Item</button>
+            </form>
+        </section>
+
+        <section id="adicionar-usuario">
+            <h2>Adicionar Usuário</h2>
+            <form id="usuario-form">
+                <input type="text" id="nome-usuario" placeholder="Nome do Usuário" required>
+                <select id="tipo-usuario">
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                    <option value="visitante">Visitante</option>
+                </select>
+                <button type="submit"><i class="fas fa-user-plus"></i> Adicionar Usuário</button>
+            </form>
+        </section>
+
+        <section id="itens-lista">
+            <h2>Itens Disponíveis</h2>
+            <table id="tabela-itens">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Tipo</th>
+                        <th>Ano</th>
+                        <th>Quantidade Disponível</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os itens serão adicionados aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Seu Nome - Sua Matrícula</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

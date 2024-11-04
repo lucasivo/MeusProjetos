@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open modelo.html",
+            "file": "c:\\Users\\LP-zi\\OneDrive\\Documentos\\Programação\\Curso em Video - JavaScript\\Aula12ex\\modelo.html"
+        }
+    ]
+}
